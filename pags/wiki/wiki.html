@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="wiki.css">
+    <title>Harry Potter</title>
+</head>
+<body id="meubody">
+    <img src="/images/corvo1.png" id="canto1">
+    <img src="/images/corvo3.png" id="canto2">
+    <img src="/images/books.png" id="canto3">
+    <section id="barra">
+        <h1 id="titulo">WIKI</h1>
+        <section class="metade" id="metade1">
+            <img src="/images/logo2.png" id="logo">
+            <div id="pesquisadiv">
+                <ion-icon name="search" class="pointer" id="pesquisaicon"></ion-icon>
+                <input type="text" id="pesquisacampo" placeholder="Busque por um usuario">
+            </div>
+        </section>
+
+        <section class="metade" id="metade2">
+            <div id="homediv">
+                <ion-icon name="home-outline" class="pointer" id="homeicon"></ion-icon>
+            </div>
+            <div id="wikidiv">
+                <ion-icon name="book-outline" class="pointer" id="wikiicon"></ion-icon>
+            </div>
+            <div id="chatdiv">
+                <ion-icon name="chatbubble-ellipses-outline" class="pointer" id="chaticon"></ion-icon>
+            </div>
+            
+            <div id="usuariodiv">
+                <ion-icon name="person-circle-outline" class="pointer" id="usuarioicon"></ion-icon>
+            </div>
+        </section>
+
+    </section>
+
+    <section id="posts">
+        <div class="slot">
+            <ion-icon name="book-outline" class="pointer blue" id="bookharry"></ion-icon>
+            <h1 class="pointer blue" id="bioharry">-BIOGRAFIA DO HARRY POTTER</h1>
+        </div>
+        <div class="slot">
+            <ion-icon name="book-outline" class="pointer blue" id="ordemliteratura"></ion-icon>
+            <h1 class="pointer blue" id="tituloordemliteratura">-ORDEM DE LITERATURA</h1>
+        </div>
+        <div class="slot">
+            <ion-icon name="book-outline" class="pointer blue" id="ordemfilmes"></ion-icon>
+            <h1 class="pointer blue" id="tituloordemfilmes">-ORDEM DE FILMES</h1>
+        </div>
+        <div class="slot">
+            <ion-icon name="book-outline" class="pointer blue" id="casacorvinal"></ion-icon>
+            <h1 class="pointer blue" id="titulocorvinal">-HISTÓRIA DA CASA CORVINAL</h1>
+        </div>
+        <div class="slot">
+            <ion-icon name="book-outline" class="pointer blue" id="casasonserina"></ion-icon>
+            <h1 class="pointer blue" id="titulosonserina">-HISTÓRIA CASA DA SONSERINA</h1>
+        </div>
+        <div class="slot">
+            <ion-icon name="book-outline" class="pointer blue" id="casalufa"></ion-icon>
+            <h1 class="pointer blue" id="titulolufa">-HISTÓRIA DA CASA LUFA-LUFA</h1>
+        </div>
+        <div class="slot">
+            <ion-icon name="book-outline" class="pointer blue" id="casagrifinor"></ion-icon>
+            <h1 class="pointer blue" id="titulogrifinor">-HISTÓRIA DA CASA GRIFINÓRIA</h1>
+        </div>
+        <div class="slot">
+            <ion-icon name="book-outline" class="pointer blue" id="bookhermione"></ion-icon>
+            <h1 class="pointer blue" id="biohermione">-BIOGRAFIA DE HERMIONE GRANGER</h1>
+        </div>
+        <div class="slot">
+            <ion-icon name="book-outline" class="pointer blue" id="booksnape"></ion-icon>
+            <h1 class="pointer blue" id="biosnape">-BIOGRAFIA DE SEVERO SNAPE</h1>
+        </div>
+        <div class="slot">
+            <ion-icon name="book-outline" class="pointer blue" id="bookvoldemort"></ion-icon>
+            <h1 class="pointer blue" id="biovoldemort">-BIOGRAFIA DE VOLDEMORT</h1>
+        </div>
+        <div class="slot">
+            <ion-icon name="book-outline" class="pointer blue" id="bookdumbledore"></ion-icon>
+            <h1 class="pointer blue" id="biodumbledore">-BIOGRAFIA DE ALVO DUMBLEDORE</h1>
+        </div>
+        <div class="slot">
+            <ion-icon name="book-outline" class="pointer blue" id="bookhogwarts"></ion-icon>
+            <h1 class="pointer blue" id="historiahogwarts">-HISTÓRIA DE HOGWARTS</h1>
+        </div>
+        
+    </section>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="wiki.js" type="module"></script>
+    <script src="/pags/scripts/barra.js" type="module"></script>
+</body>
+</html>

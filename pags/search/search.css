@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.cdnfonts.com/css/harry-potter');
+
+
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: rgb(63, 13, 62);
+    
+    
+}
+
+#barra {
+    position: fixed;
+    display: flex;
+    width: 99%;
+    height: 10%;
+}
+
+
+.metade {
+    width: 50%;
+    height: 100%;
+}
+
+#metade2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#metade1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#logo {
+    width: 15%;
+}
+#homediv {
+    font-size: 2vw;
+    margin-right: 10%;
+}
+#usuariodiv {
+    font-size: 3.5vw;
+    height: 75%;
+    margin-left: 10%;
+    margin-right: 1%;
+}
+
+#pesquisadiv {
+    margin-left: 9%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pesquisacampo {
+    margin-left: 5%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    padding: 9px;
+    background: rgb(219, 218, 218);
+    box-sizing: border-box;
+    font-weight: 800;
+}
+
+#pesquisaicon {
+    font-size: 2.5em;
+}
+
+#chatdiv {
+    font-size: 2vw;
+    margin-left: 10%;
+}
+
+#wikidiv {
+    font-size: 2vw;
+}
+
+#titulo {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Harry Potter', sans-serif;
+    color: white;
+    
+}
+
+ion-icon {
+    color: white;
+}
+
+.imgback {
+    position: absolute;
+    z-index: 0;
+    width: 20vw;
+}
+#canto1 {
+    position: absolute;
+    filter: invert(1);
+    width: 30%;
+    opacity: 0.5;
+}
+#canto2 {
+    position: absolute;
+    filter: invert(1);
+    width: 30%;
+    right: 0;
+    transform: rotateY(180deg);
+    opacity: 0.5;
+}
+
+#canto3 {
+    position: absolute;
+    width: 15%;
+    bottom: 0;
+    left: 0;
+    
+}
+
+#posts {
+    width: 70%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    background: rgb(54, 7, 70);
+    border-radius: 30px;
+    box-shadow: 0px 10px 40px rgb(0, 0, 0);
+}
+
+#veja {
+    color: white;
+    text-shadow: 0px 5px 20px rgb(239, 37, 222);
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+#users{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    overflow: hidden;
+    box-sizing: border-box;
+    
+}
+
+.usuario{
+    width: auto;
+    height: 20%;
+    max-width: 30%;
+    min-width: 200px;
+    display: flex;
+    color: white;
+    margin-left: 5%;
+}
+
+.usuario ion-icon {
+    font-size: 3em;
+}
+
+.usuario div {
+    display: flex;
+    align-items: center;
+}

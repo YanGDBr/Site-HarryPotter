@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="perfil.css">
+    <title>Harry Potter</title>
+</head>
+<body id="meubody">
+    <img src="/images/corvo1.png" id="canto1">
+    <img src="/images/corvo3.png" id="canto2">
+    <img src="/images/books.png" id="canto3">
+    <section id="barra">
+        <h1 id="titulo">PERFIL</h1>
+        <section class="metade" id="metade1">
+            <img src="/images/logo2.png" id="logo">
+            <div id="pesquisadiv">
+                <ion-icon name="search" class="pointer" id="pesquisaicon"></ion-icon>
+                <input type="text" id="pesquisacampo" placeholder="Busque por um usuario">
+            </div>
+        </section>
+
+        <section class="metade" id="metade2">
+            <div id="homediv">
+                <ion-icon name="home-outline" class="pointer" id="homeicon"></ion-icon>
+            </div>
+            <div id="wikidiv">
+                <ion-icon name="book-outline" class="pointer" id="wikiicon"></ion-icon>
+            </div>
+            <div id="chatdiv">
+                <ion-icon name="chatbubble-ellipses-outline" class="pointer" id="chaticon"></ion-icon>
+            </div>
+            
+            <div id="usuariodiv">
+                <ion-icon name="person-circle-outline" class="pointer" id="usuarioicon"></ion-icon>
+            </div>
+        </section>
+
+    </section>
+
+    <section id="posts">
+        <p id="erro"></p>
+        
+        <div id="veja">
+            <ion-icon name="person-circle-outline"></ion-icon>
+            <h1></h1>
+            
+        </div>
+        <div id="casa">
+            <label for="grifinor"></label>
+            <img src="" class="imgini" id="grifinor" name="grifinor">
+            <span id="caixa">Grifinória<br>Lar dos bravos guerreiros, pórem geralmente tem atitudades agressivas, egoistas e teimosia</span>
+        </div>
+        <div id="biografia">
+            <h2>Biografia</h2>
+            <p></p>
+        </div>
+        <div id="adicionaramigo">
+            <h2>Conta criada há </h2>
+            <button class="botao" id="botao1"></button>
+            <button class="botao" id="botao2"></button>
+            <p id="enviado"></p>
+        </div>
+    </section>
+    <section id="amigos">
+        
+    </section>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="perfil.js" type="module"></script>
+    <script src="/pags/scripts/barra.js" type="module"></script>
+    <script>
+        var amigos;
+        
+            amigos = document.querySelector('#amigos');
+            var mousePos = {
+            x: 0,
+            y: 0,
+            };
+
+            
+            amigos.onmousedown = function(e) {
+            
+            mousePos.x = e.clientX;
+            mousePos.y = e.clientY;
+
+            
+            document.onmousemove = onMouseMove;
+            document.onmouseup = stopDrag;
+            }
+
+            function onMouseMove(e) {
+                var dx = e.clientX - mousePos.x;
+                var dy = e.clientY - mousePos.y;
+
+                // Calcule as novas posições propostas
+                var newTop = amigos.offsetTop + dy;
+                var newLeft = amigos.offsetLeft + dx;
+
+                // Obtenha as dimensões da janela
+                var windowWidth = window.innerWidth;
+                var windowHeight = window.innerHeight;
+
+                // Verifique se a div está dentro dos limites da janela
+                if (newTop >= 0 && newTop <= windowHeight - amigos.offsetHeight) {
+                    amigos.style.top = newTop + "px";
+                }
+                if (newLeft >= 0 && newLeft <= windowWidth - amigos.offsetWidth) {
+                    amigos.style.left = newLeft + "px";
+                }
+
+                mousePos = {
+                    x: e.clientX,
+                    y: e.clientY,
+                };
+            }
+
+
+            function stopDrag() {
+            
+            document.onmousemove = null;
+            document.onmouseup = null;
+            }
+            
+        
+    </script>
+</body>
+</html>

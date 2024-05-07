@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="chat.css">
+    <title>Harry Potter</title>
+</head>
+<body id="meubody">
+    <img src="/images/corvo1.png" id="canto1">
+    <img src="/images/corvo3.png" id="canto2">
+    <img src="/images/books.png" id="canto3">
+    <section id="barra">
+        <h1 id="titulo">CHAT</h1>
+        <section class="metade" id="metade1">
+            <img src="/images/logo2.png" id="logo">
+            <div id="pesquisadiv">
+                <ion-icon name="search" class="pointer" id="pesquisaicon"></ion-icon>
+                <input type="text" id="pesquisacampo" placeholder="Busque por um usuario">
+            </div>
+        </section>
+
+        <section class="metade" id="metade2">
+            <div id="homediv">
+                <ion-icon name="home-outline" class="pointer" id="homeicon"></ion-icon>
+            </div>
+            <div id="wikidiv">
+                <ion-icon name="book-outline" class="pointer" id="wikiicon"></ion-icon>
+            </div>
+            <div id="chatdiv">
+                <ion-icon name="chatbubble-ellipses-outline" class="pointer" id="chaticon"></ion-icon>
+            </div>
+            
+            <div id="usuariodiv">
+                <ion-icon name="person-circle-outline" class="pointer" id="usuarioicon"></ion-icon>
+            </div>
+        </section>
+
+    </section>
+
+    <section id="posts">
+        <div id="barralateral">
+            <div id="casatexto">
+                
+            </div>
+            
+        </div>
+        <div id="chatbarra">
+            <div id="mensagens">
+                <div id="titulo2">
+                    <h1 class="lufa">LUFA-LUFA</h1>
+                </div>
+            </div>
+            <div id="campo">
+                <input type="text" placeholder="Digite uma Mensagem" maxlength="200" id="input">
+                <button class="botao3" id="enviar">Enviar</button>
+            </div>
+        </div>
+    </section>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="chat.js" type="module"></script>
+    <script src="/pags/scripts/barra.js" type="module"></script>
+</body>
+</html>

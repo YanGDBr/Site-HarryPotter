@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.cdnfonts.com/css/harry-potter');
+
+
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: rgb(63, 13, 62);
+    
+    
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#barra {
+    position: fixed;
+    display: flex;
+    width: 99%;
+    height: 10%;
+}
+
+
+.metade {
+    width: 50%;
+    height: 100%;
+}
+
+#metade2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#metade1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#logo {
+    width: 15%;
+}
+
+#usuariodiv {
+    font-size: 3.5vw;
+    height: 75%;
+    margin-left: 10%;
+    margin-right: 1%;
+}
+
+#pesquisadiv {
+    margin-left: 9%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pesquisacampo {
+    margin-left: 5%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    padding: 9px;
+    background: rgb(219, 218, 218);
+    box-sizing: border-box;
+    font-weight: 800;
+}
+
+#pesquisaicon {
+    font-size: 2.5em;
+}
+
+#chatdiv {
+    font-size: 2vw;
+    margin-left: 10%;
+}
+
+#wikidiv {
+    font-size: 2vw;
+}
+
+#homediv {
+    font-size: 2vw;
+    margin-right: 10%;
+}
+
+#titulo {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Harry Potter', sans-serif;
+    color: white;
+    
+}
+
+ion-icon {
+    color: white;
+}
+
+.imgback {
+    position: absolute;
+    z-index: 0;
+    width: 20vw;
+}
+#canto1 {
+    position: absolute;
+    filter: invert(1);
+    width: 30%;
+    opacity: 0.5;
+}
+#canto2 {
+    position: absolute;
+    filter: invert(1);
+    width: 30%;
+    right: 0;
+    transform: rotateY(180deg);
+    opacity: 0.5;
+}
+
+#canto3 {
+    position: absolute;
+    width: 15%;
+    bottom: 0;
+    left: 0;
+    
+}
+
+#posts {
+    width: 70%;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(54, 7, 70);
+    border-radius: 30px;
+    box-shadow: 0px 10px 40px rgb(0, 0, 0);
+}
+
+#veja {
+    color: white;
+    text-shadow: 0px 5px 20px rgb(239, 37, 222);
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+}
+#veja ion-icon {
+    font-size: 3em;
+    position: absolute;
+    top: auto;
+    left: 0%;
+}
+
+
+.pointer {
+    cursor: pointer;
+}
+
+#barralateral {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+#chatbarra {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+#casatexto {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao {
+    width: 70%;
+    border: none;
+    padding: 12px 0px;
+    margin-top: 5%;
+    border-radius: 10px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 1px;
+    background: rgb(52, 233, 206);
+    cursor: pointer;
+    box-shadow: 0px 10px 30px -12px rgb(120, 33, 120);
+    transition: all 1s;
+}
+
+.botao2 {
+    width: 90%;
+    border: none;
+    padding: 12px 0px;
+    margin-top: 5%;
+    border-radius: 10px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.botao:hover {
+    transform: scale(1.10);
+
+}
+
+.botao2:hover {
+    transform: scale(1.10);
+    
+}
+
+.azul {
+    background: #2533d0;
+    box-shadow: 0px 10px 30px -12px #2533d0;
+}
+
+.verde {
+    background: rgb(52, 233, 122);
+    box-shadow: 0px 10px 30px -12px rgb(52, 233, 122);;
+}
+
+.amarelo {
+    background: #eeff0d;
+    box-shadow: 0px 10px 30px -12px #eeff0d;
+}
+
+.vermelho {
+    background: #ff2929;
+    box-shadow: 0px 10px 30px -12px #ff2929;
+}
+
+.selecionado {
+    transform: scale(1.15);
+    background: rgb(7, 245, 98);
+    box-shadow: 0px 0px 35px rgb(7, 245, 98);
+}
+
+#mensagens {
+    width: 99%;
+    height: 75%;
+    background: #601848;
+    border-radius: 20px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+#campo {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+}
+
+#campo input {
+    width: 70%;
+    height: 50%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 9px;
+    background: rgb(219, 218, 218);
+    box-sizing: border-box;
+}
+
+.botao3 {
+    width: 20%;
+    border: none;
+    padding: 12px 0px;
+    border-radius: 10px;
+    outline: none;
+    margin-left: 5%;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 1s;
+    background: rgb(52, 233, 122);
+    box-shadow: 0px 10px 30px -12px rgb(52, 233, 122);;
+}
+
+.botao3:hover {
+    transform: scale(1.10);
+}
+
+.mensagem {
+    margin-bottom: 4%;
+    margin-left: 2.5%;
+    display: flex;
+    overflow-wrap: break-word;
+
+}
+.mensagem p {
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-shadow: 0.1em 0.1em 0.2em rgb(0, 0, 0);
+}
+.mensagem h1 {
+    margin: 0;
+    color: white;
+    text-shadow: 0em 0em 0.2em rgb(0, 255, 255);
+}
+.mensagem ion-icon {
+    font-size: 3em
+}
+
+.identificacao {
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+#titulo2 {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-family: 'Harry Potter';
+}
+
+.lufa {
+    text-shadow: 0.1em 0.1em 0.2em rgb(195, 255, 0);
+}
+
+.corvi {
+    text-shadow: 0.1em 0.1em 0.2em rgb(78, 31, 247);
+}
+
+.sonse {
+    text-shadow: 0.1em 0.1em 0.2em rgb(47, 255, 0);
+}
+.grifi {
+    text-shadow: 0.1em 0.1em 0.2em rgb(250, 38, 38);
+}
+.white {
+    text-shadow: 0.1em 0.1em 0.2em rgb(255, 255, 255);
+}
