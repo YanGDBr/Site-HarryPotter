@@ -10,4 +10,4 @@ Utiliza FIREBASE API, não tem protocolos de segurança.
 
 Está disponivel para acesso com o Netlify:
 
-[Site](https://etecpotter.netlify.app/)
+[Disponivel para Acesso aqui](https://etecpotter.netlify.app/)
